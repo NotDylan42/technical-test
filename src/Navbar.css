@@ -1,0 +1,109 @@
+/* NavBar.css */
+
+/* Basic reset for padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar Styles */
+  .navbar {
+    position: -webkit-sticky; /* For Safari support */
+    position: sticky;  /* This makes the navbar stick to the top */
+    top: 0;  /* Ensures it sticks at the top */
+    width: 100%;  /* Ensures the navbar spans the full width */
+    background-color: #ffffff;  /* Set the background color */
+    color: #343536;
+    z-index: 1000;  /* Ensure the navbar stays above other elements */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Add shadow for depth */
+    padding: 10px 0; /* Add some vertical padding to the navbar */
+  }
+  
+  /* Navbar Container */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;  /* Horizontal padding for spacing */
+    max-width: 1200px;  /* Limit the width of the container for readability */
+    margin: 0 auto;  /* Center the navbar on the screen */
+    width: 100%;  /* Ensures the container spans the full width */
+  }
+  
+  /* Navbar Logo Styling */
+  .navbar-logo a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo-image {
+    height: 60px; /* Set the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Navbar Links */
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links li {
+    display: inline-block;
+  }
+  
+  .navbar-links a {
+    color: #343536;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #ff9600;
+  }
+
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Show the hamburger menu on mobile */
+    }
+  
+    .navbar-links {
+      display: none; /* Hide the links by default on mobile */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      width: 200px;
+    }
+  
+    .navbar-links.mobile-open {
+      display: flex; /* Show the dropdown menu when mobile-open is active */
+    }
+  
+    .navbar-links a {
+      padding: 10px 0;
+      color: #343536;
+    }
+    .navbar-links a:hover {
+      color: #ff9600;
+    }
+  }

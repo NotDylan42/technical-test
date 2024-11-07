@@ -1,0 +1,390 @@
+  .landing-page {
+    font-family: Arial, sans-serif;
+    background-color: #b9e0ff;
+  }
+  
+  .header-image {
+    width: 100%;  
+    height: 420px;  
+    background-size: cover;  
+    background-position: center top;
+    position: relative;  
+  }
+  .header-image::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+  
+  /* Overlay content styling */
+  .header-overlay {
+    position: absolute;
+    z-index:2;
+  }
+
+  .header-overlay h1 {
+    font-size: 3rem;
+    margin: 0;
+    bottom:20px;
+    color:#ffffff;
+    margin-left:4%;
+    margin-top:200px;
+    line-height:1.2;
+    text-shadow: 3px 2px 4px #28292b;
+  }
+
+  .quote-text {  
+    font-style: italic; 
+    font-size:1.3rem;       
+    color: #333;              
+    line-height: 1.2;          
+  }
+
+  .quote-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .quote-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  .quote-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    position: relative; /* To position the button absolutely within this container */
+  }
+  
+  .image-container {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    margin-right: 20px; /* Space between the image and the text */
+  }
+  
+  .quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:5%;
+    max-width: 600px; /* Limit the width of the text */
+  }
+  
+  .learn-more-button {
+    background-color: #FF8D00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #ff6f00;
+  }
+  
+  /* New section to align the button to the bottom right */
+  .button-container {
+    margin-top: auto; /* Push the button to the bottom of the quote-container */
+    display: flex;
+    justify-content: flex-end; /* Align the button to the right */
+    width: 100%;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #ff6f00;
+  }
+
+  .circular-image {
+    width: 180px;              
+    height: 180px;             
+    border-radius: 50%;        
+    object-fit: cover;    
+  }
+
+  .landing-header h1{
+    text-align: center;
+    color: #333;
+    margin-top:3%;
+  }
+  
+  .content-section {
+    display: flex;
+    margin-top: 30px;
+    max-width:60vw;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  
+  .landing-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+  
+  .text-content {
+    padding: 20px;
+  }
+  
+  .cta-footer {
+    text-align: center;
+    margin-top: 30px;
+    width: 100vw;
+    height: 420px;  /* Set a height for the image */
+    background-size: cover;  /* Make the image cover the entire section */
+    background-position: center top;
+    position: relative; 
+  }
+  .cta-footer::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+
+  .call-to-action-overlay {
+    position: absolute;
+    z-index:1;
+
+  }
+
+  .call-to-action-overlay h2 {
+    font-size: 3rem;
+    margin: 0;
+    color:#ffddba;
+    margin-left:4%;
+    margin-top:2%;
+  }
+  
+
+  .content-item {
+    display:flex;
+    background-color: white; /* Sets the background to white */
+    border-radius: 15px; /* Rounds the corners */
+    padding: 20px; /* Adds some space inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+    margin-bottom: 20px; /* Adds space below each content item */
+  }
+  .content-image-desktop, .content-image {
+    flex: 0 0 35%; /* 35% width for the image */
+    display: flex;
+    align-items: center;  /* Centers the image vertically */
+    justify-content: center;  /* Centers the image horizontally */
+  }
+  
+  .content-image-desktop img, .content-image img {
+    width: 350px;           /* Ensures the image fills the container's width */
+    height: 250px;         /* Sets a consistent height for all images */
+    object-fit: cover;     /* Crops the image to fill the width and height without stretching */
+    border-radius: 8px;    /* Optional: rounded corners */
+  }
+  
+  .content-image-mobile {
+    display:none;
+  }
+  .text-content h2 {
+    color:#333;
+  }
+
+  .text-content p {
+    margin-left:15px;
+    margin-right:5px;
+    color:#333;
+  }
+  .image-container {
+    flex-shrink: 0;            /* Prevents image from shrinking */
+  }  
+
+  .lead-form {
+    position:relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    padding-top:-100px;
+    align-items: center;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    transform: translateY(-200px);
+    background-color: #f9f9f9; /* Light background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  .lead-form:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .lead-form input, .lead-form textarea {
+    width: 100%;
+    padding: 12px 20px; 
+    margin: 10px 0;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s ease; 
+  }
+  
+  .lead-form input:focus, .lead-form textarea:focus {
+    border-color: #FF8D00 ; 
+    outline: none; 
+  }
+  
+  .lead-form textarea {
+    height: 150px; 
+    resize: vertical; 
+  }
+  
+
+  .lead-form label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    align-self: flex-start; /* Align labels to the left */
+    color: #333; /* Darker text color */
+  }
+  
+  /* Submit Button */
+  .lead-form button {
+    background-color: #FF8D00; /* Green background */
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight:bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .lead-form button:hover {
+    background-color: #d37400; /* Slightly darker green on hover */
+  }
+  
+  /* Submission Confirmation */
+  .submission-confirmation-container {
+    display: flex;                 /* Enable flexbox */
+    justify-content: center;       /* Center horizontally */
+    align-items: center;           /* Center vertically */
+  }
+  .submission-confirmation {
+    background-color: white;        /* White background */
+    padding: 20px;                  /* Space inside the box */
+    border-radius: 10px;            /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Light shadow for better visibility */
+    text-align: center;             /* Center the text inside */
+    width: 80%;                     /* You can adjust the width as needed */
+    max-width: 600px;               /* Optional: Set a max width */
+    margin: 20px auto;              /* Center the box horizontally and give some top/bottom margin */
+  }
+  
+  .submission-confirmation a {
+    color: #FF8D00;
+    text-decoration: none;
+  }
+  
+  .submission-confirmation a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 820px) {
+    .quote-container {
+      margin-top:0;
+    }
+    .content-image-desktop {
+      display: none;
+    }
+    .content-image-mobile {
+      flex: 0 0 35%; /* 35% width for the image */
+      display: flex;
+      align-items: center;  /* Centers the image vertically */
+      justify-content: center;  /* Centers the image horizontally */
+    }
+    
+    .content-image-mobile img {
+      width: 100%;           /* Ensures the image fills the container's width */
+      height: 250px;         /* Sets a consistent height for all images */
+      object-fit: cover;     /* Crops the image to fill the width and height without stretching */
+      border-radius: 8px;    /* Optional: rounded corners */
+    }
+    .content-image-mobile {
+      flex: 0 0 35%; /* 35% width for the image */
+      display: flex;
+      align-items: center;  /* Centers the image vertically */
+      justify-content: center; 
+    }
+    .quote-box {
+      flex-direction: column;  /* Stack image and text vertically */
+      text-align: center;      /* Center-align text */
+      padding: 15px;           /* Reduce padding */
+      align-items: center;
+    }
+  
+    .circular-image {
+      width: 100px;             /* Reduce image size */
+      height: 100px;
+    }
+  
+    .quote-text {
+      font-size: 1.2rem;       /* Adjust font size */
+      line-height: 1.2;
+      padding-top: 10px;       /* Add spacing between image and text */
+      margin-bottom:2%;
+    }
+    
+    .content-section{
+      align-items: center;
+    }
+      .content-item {
+        flex-direction: column; /* Stack image above text for all sections */
+        text-align: center;
+        min-width:370px;
+      }
+    
+      .content-image img {
+        max-width: 100%; /* Make images responsive */
+        width: 100%;
+      }
+    
+      .text-content {
+        padding: 0 15px; /* Add padding for better readability */
+      }
+    
+      .cta-footer {
+        padding: 15px;
+        font-size: 1.1em;
+      }
+      .header-overlay h1 {
+        margin-top:0;
+      }
+      .call-to-action-overlay h2 {
+        font-size:2rem;
+      }
+      .submission-confirmation {
+        align-items:center;
+        width:95vw;
+        max-width:95vw;
+      }
+      
+  }
