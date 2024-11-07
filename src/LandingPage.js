@@ -23,7 +23,7 @@ const LandingPage = () => {
       <section className="quote-section">
         <div className="quote-box">
           <div className="image-container">
-            <img src="testimonials.webp" alt="Doctor giving testimonial about Medcore" className="circular-image" />
+            <img src="testimonials.webp" alt="Doctor giving testimonial about Medcore" className="circular-image" loading="lazy" />
           </div>
           <div className="quote-container">
             <p className="quote-text">"Medcore Solutions' flexible staffing is revolutionizing hospitals, helping them increase retention and improve patient satisfaction through..."</p>
@@ -43,7 +43,7 @@ const LandingPage = () => {
         {/* Maximize Savings */}
         <div className="content-item">
           <div className="content-image">
-            <img src="/patient-savings.webp" alt="Hospital Administrator increasing savings through flexible staffing" width="350px"/>
+            <img src="/patient-savings.webp" alt="Hospital Administrator increasing savings through flexible staffing" width="350px" loading="lazy"/>
           </div>
           <div className="text-content">
             <h2>Maximize your Savings</h2>
@@ -55,7 +55,7 @@ const LandingPage = () => {
         {/* Elevate Patient Care */}
         <div className="content-item">
           <div className="content-image-mobile">
-            <img src="/patient-care.webp" alt="Doctor meeting with patient and increasing patient satisfaction" width="350px" height="150px"/>
+            <img src="/patient-care.webp" alt="Doctor meeting with patient and increasing patient satisfaction" width="350px" height="150px" loading="lazy"/>
           </div>
           <div className="text-content">
             <h2>Elevate your Patient Care</h2>
@@ -64,14 +64,14 @@ const LandingPage = () => {
             <p>Research published in the Journal of Nursing Administration paints a compelling picture: hospitals with flexible staffing models witnessed a <u><b>20% drop in patient wait times</b></u> and a <u><b>15% surge in patient satisfaction scores</b></u>, underscoring the profound positive impact of flexible staffing on patient well-being</p>
           </div>
           <div className="content-image-desktop">
-            <img src="/patient-care.webp" alt="Doctor meeting with patient and increasing patient satisfaction" width="350px" height="150px"/>
+            <img src="/patient-care.webp" alt="Doctor meeting with patient and increasing patient satisfaction" width="350px" height="150px" loading="lazy"/>
           </div>
         </div>
 
         {/* Empower Staff Satisfaction */}
         <div className="content-item">
           <div className="content-image">
-            <img src="/staff.webp" alt="Increased retention with hospital staff" width="350px"/>
+            <img src="/staff.webp" alt="Increased retention with hospital staff" width="350px" loading="lazy"/>
           </div>
           <div className="text-content">
             <h2>Empower your Staff Satisfaction</h2>
